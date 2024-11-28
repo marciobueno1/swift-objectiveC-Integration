@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var showAlert01 = false
     @State private var showAlert02 = false
     @State private var showAlert03 = false
+    @State private var showAlert04 = false
 
     var body: some View {
         VStack {
@@ -40,10 +41,21 @@ struct ContentView: View {
             Button("Task 03") {
                 showAlert03 = true
             }
-            .alert(isPresented: $showAlert02) {
+            .alert(isPresented: $showAlert03) {
                 Alert(
                     title: Text("Task 03"),
                     message: Text(manager.performTask03()),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
+
+            Button("Task 04") {
+                showAlert04 = true
+            }
+            .alert(isPresented: $showAlert04) {
+                Alert(
+                    title: Text("Task 03"),
+                    message: Text(manager.performTask04()),
                     dismissButton: .default(Text("OK"))
                 )
             }

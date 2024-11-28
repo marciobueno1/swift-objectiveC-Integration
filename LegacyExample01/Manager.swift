@@ -21,4 +21,8 @@ class Manager {
     func performTask03() -> String {
         legacyManager.performSwiftLegacyTask03()
     }
+
+    func performTask04() -> String {
+        legacyManager.performLegacyTask04()
+    }
 }

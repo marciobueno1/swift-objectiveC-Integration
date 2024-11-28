@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LegacyManager : NSObject
 
 - (NSString *)performLegacyTask02;
+- (NSString *)performLegacyTask04;
 
 @end
 

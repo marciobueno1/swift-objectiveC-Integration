@@ -14,6 +14,7 @@
 		A8B6E3BF2CF77EE0004BBEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B6E3BE2CF77EE0004BBEA5 /* ContentView.swift */; };
 		A8B6E3C12CF77EE3004BBEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B6E3C02CF77EE3004BBEA5 /* Assets.xcassets */; };
 		A8B6E3C42CF77EE3004BBEA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B6E3C32CF77EE3004BBEA5 /* Preview Assets.xcassets */; };
+		A8F7B7D72CF91DBD009444F1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7B7D62CF91DBD009444F1 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A8B6E3C02CF77EE3004BBEA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B6E3C32CF77EE3004BBEA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8B6E3C52CF77EE3004BBEA5 /* LegacyExample01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LegacyExample01.entitlements; sourceTree = "<group>"; };
+		A8F7B7D62CF91DBD009444F1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				A8B6E3BC2CF77EE0004BBEA5 /* LegacyExample01App.swift */,
 				A8B6E3BE2CF77EE0004BBEA5 /* ContentView.swift */,
+				A8F7B7D62CF91DBD009444F1 /* Helper.swift */,
 				A8672E4D2CF79E5F00B6BEF8 /* Manager.swift */,
 				A8672E4A2CF79DF100B6BEF8 /* LegacyManager.h */,
 				A8672E4B2CF79DF100B6BEF8 /* LegacyManager.m */,
@@ -158,6 +161,7 @@
 				A8B6E3BD2CF77EE0004BBEA5 /* LegacyExample01App.swift in Sources */,
 				A8672E4C2CF79DF100B6BEF8 /* LegacyManager.m in Sources */,
 				A8672E4E2CF79E5F00B6BEF8 /* Manager.swift in Sources */,
+				A8F7B7D72CF91DBD009444F1 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"LegacyExample01/Preview Content\"";
 				DEVELOPMENT_TEAM = T8Y373PK8K;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -319,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"LegacyExample01/Preview Content\"";
 				DEVELOPMENT_TEAM = T8Y373PK8K;
 				ENABLE_HARDENED_RUNTIME = YES;
