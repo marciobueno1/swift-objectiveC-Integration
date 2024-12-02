@@ -7,6 +7,7 @@
 
 #import "LegacyManager.h"
 #import "LegacyExample01-Swift.h"
+#import <LegacyFramework/LegacyFramework.h>
 
 @implementation LegacyManager
 
@@ -18,5 +19,8 @@
     return [Helper scrambleWordsIn:@"String generated in a Legacy Class (performLegacyTask04)"];
 }
 
+- (NSString *)performLegacyTask06 {
+    return [[[LegacyFrameworkClass alloc] init] performLegacyFrameworkTask05];
+}
 
 @end

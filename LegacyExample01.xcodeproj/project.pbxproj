@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A815A5322CFA1BA80033BDBB /* LegacyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A815A52A2CF943A00033BDBB /* LegacyFramework.framework */; };
+		A815A5332CFA1BA80033BDBB /* LegacyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A815A52A2CF943A00033BDBB /* LegacyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8672E4C2CF79DF100B6BEF8 /* LegacyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8672E4B2CF79DF100B6BEF8 /* LegacyManager.m */; };
 		A8672E4E2CF79E5F00B6BEF8 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8672E4D2CF79E5F00B6BEF8 /* Manager.swift */; };
 		A8672E522CF8AF2700B6BEF8 /* LegacyManager+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8672E512CF8AF2700B6BEF8 /* LegacyManager+Additions.swift */; };
@@ -17,7 +19,39 @@
 		A8F7B7D72CF91DBD009444F1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7B7D62CF91DBD009444F1 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A815A5292CF943A00033BDBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A815A5242CF9439F0033BDBB /* LegacyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A815A50A2CF9439F0033BDBB;
+			remoteInfo = LegacyFramework;
+		};
+		A815A52B2CF943A00033BDBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A815A5242CF9439F0033BDBB /* LegacyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A815A5142CF9439F0033BDBB;
+			remoteInfo = LegacyFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A815A5342CFA1BA80033BDBB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A815A5332CFA1BA80033BDBB /* LegacyFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A815A5242CF9439F0033BDBB /* LegacyFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LegacyFramework.xcodeproj; path = LegacyFramework/LegacyFramework.xcodeproj; sourceTree = "<group>"; };
 		A8672E492CF79DF000B6BEF8 /* LegacyExample01-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LegacyExample01-Bridging-Header.h"; sourceTree = "<group>"; };
 		A8672E4A2CF79DF100B6BEF8 /* LegacyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LegacyManager.h; sourceTree = "<group>"; };
 		A8672E4B2CF79DF100B6BEF8 /* LegacyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegacyManager.m; sourceTree = "<group>"; };
@@ -37,18 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A815A5322CFA1BA80033BDBB /* LegacyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A815A5252CF9439F0033BDBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A815A52A2CF943A00033BDBB /* LegacyFramework.framework */,
+				A815A52C2CF943A00033BDBB /* LegacyFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A815A5312CFA1BA80033BDBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8B6E3B02CF77EDF004BBEA5 = {
 			isa = PBXGroup;
 			children = (
+				A815A5242CF9439F0033BDBB /* LegacyFramework.xcodeproj */,
 				A8B6E3BB2CF77EE0004BBEA5 /* LegacyExample01 */,
 				A8B6E3BA2CF77EE0004BBEA5 /* Products */,
 				A8672E492CF79DF000B6BEF8 /* LegacyExample01-Bridging-Header.h */,
+				A815A5312CFA1BA80033BDBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +148,7 @@
 				A8B6E3B52CF77EDF004BBEA5 /* Sources */,
 				A8B6E3B62CF77EDF004BBEA5 /* Frameworks */,
 				A8B6E3B72CF77EDF004BBEA5 /* Resources */,
+				A815A5342CFA1BA80033BDBB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +186,35 @@
 			mainGroup = A8B6E3B02CF77EDF004BBEA5;
 			productRefGroup = A8B6E3BA2CF77EE0004BBEA5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A815A5252CF9439F0033BDBB /* Products */;
+					ProjectRef = A815A5242CF9439F0033BDBB /* LegacyFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A8B6E3B82CF77EDF004BBEA5 /* LegacyExample01 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A815A52A2CF943A00033BDBB /* LegacyFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LegacyFramework.framework;
+			remoteRef = A815A5292CF943A00033BDBB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A815A52C2CF943A00033BDBB /* LegacyFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LegacyFrameworkTests.xctest;
+			remoteRef = A815A52B2CF943A00033BDBB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A8B6E3B72CF77EDF004BBEA5 /* Resources */ = {

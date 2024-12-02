@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import LegacyFramework
 
 class Manager {
     private let legacyManager = LegacyManager()
+    private let legacyFrameworkClass = LegacyFrameworkClass()
     
     func performTask01() -> String {
         "Message created in Swift"
@@ -24,5 +26,13 @@ class Manager {
 
     func performTask04() -> String {
         legacyManager.performLegacyTask04()
+    }
+    
+    func performTask05() -> String {
+        legacyFrameworkClass.performLegacyFrameworkTask05()
+    }
+
+    func performTask06() -> String {
+        legacyManager.performLegacyTask06()
     }
 }

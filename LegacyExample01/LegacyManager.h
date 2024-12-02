@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)performLegacyTask02;
 - (NSString *)performLegacyTask04;
+- (NSString *)performLegacyTask06;
 
 @end
 
