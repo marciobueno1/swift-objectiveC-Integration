@@ -18,5 +18,4 @@
     return [Helper scrambleWordsIn:@"String generated in a Legacy Class (performLegacyTask04)"];
 }
 
-
 @end
