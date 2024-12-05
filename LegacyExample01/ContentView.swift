@@ -40,7 +40,7 @@ struct ContentView: View {
             Button("Task 03") {
                 showAlert03 = true
             }
-            .alert(isPresented: $showAlert02) {
+            .alert(isPresented: $showAlert03) {
                 Alert(
                     title: Text("Task 03"),
                     message: Text(manager.performTask03()),
